@@ -1,0 +1,284 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background-color: #fae8c8;
+}
+li{
+	list-style: none;
+}
+img{
+	vertical-align: middle;
+}
+/* ----title---- */
+.title{
+	height: 30px;
+	background-color:#2f2f2f;
+} 
+.title div{
+	height: 30px;
+	width: 900px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: white;
+}
+.title div p:nth-of-type(1){
+	float: left;
+	line-height: 30px;
+	margin-left: 20px;
+}
+.title div p:nth-of-type(2){
+	float: right;
+	line-height: 30px;
+	margin-right: 20px;
+}
+.title div p:nth-of-type(2) a{
+	font-size: 12px;
+	margin-left: 20px;
+	color: white;
+}
+
+/* ----logo---- */
+.logo{
+	height: 76px;
+	background-color: white;
+}
+.logo .logo1{
+	width: 900px;
+	height: 76px;
+	margin:0  auto;
+}
+.logo .logo1 img{
+	width: 60px;
+	float: left;
+	margin: 8px 4px 0px 20px;
+
+}
+.logo .logo1 p{
+	float: left;
+	font-size: 14px;
+	margin-top: 20px;
+	color:#c61a1a;
+}
+.logo .logo1 div{
+	float: right;
+	width: 230px;
+	padding-top: 24px;
+	margin-right: 18px;
+}
+.logo .logo1 div input:nth-of-type(1){
+	float: left;
+	height: 30px;
+	width: 170px;
+	border:1px solid #999999;
+	border-radius: 6px 0px 0px 6px ;
+	font-size: 12px;
+	padding-left: 10px;
+}
+.logo .logo1 div input:nth-of-type(2){
+	float: left;
+	height: 32px;
+	width: 40px;
+	border:1px solid #c82222;
+	border-radius: 0px 6px 6px 0px ;
+	border-left: none;
+	background: #c61a1a;
+	color: white;
+	font-size: 12px;
+}
+
+
+
+/* ---- nav ---- */
+nav{
+	height: 40px;
+	background-color:#c61a1a;
+}
+nav ul{
+	width: 900px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+nav ul li{
+	float: left;
+	color: white;
+	line-height: 36px;
+	font-size: 14px;
+	margin:0 30px;
+	text-align: center;
+	cursor: pointer;
+}
+nav ul li a{
+    color: white;
+}
+nav ul li:hover{
+	border-bottom: 4px solid white;
+}
+
+.lian{
+	width: 880px;
+	height: 30px;
+	margin: 0 auto;
+	padding-left: 20px;
+	font-size: 14px;
+	color: rgb(207, 3, 3);
+}
+.lian a{
+	line-height: 30px;
+	font-size: 14px;
+	color: rgb(207, 3, 3);
+}
+
+
+/* main */
+.main{
+	width: 820px;
+	background-color: white;
+	margin: 0 auto;
+
+	padding-left:40px;
+	padding-right: 40px;
+}
+.main h2 {
+	text-align: center;
+	color: rgb(207, 3, 3);
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+.main .m1{
+	width: 600px;
+	display: block;
+	margin: 0 auto ;
+}
+.main .biao{
+	width: 800px;
+	margin: 10px auto;
+}
+.main .biao fieldset{
+	border: 1px solid silver;;
+	border-radius: 20px;
+}
+.main .biao fieldset legend{
+	margin-left: 30px;
+	padding: 0 10px;
+}
+.main .biao h3{
+	text-align: left;
+}
+.main .biao table{
+	margin: 0 auto;
+}
+.main .biao table tr th{
+	width: 130px;
+	color: silver;
+}
+.main .biao table tr td{
+	font-size: 18px;
+	line-height: 50px;
+	text-align: center;
+}
+.main ul{
+	width: 800px;
+	margin: 0 auto;
+}
+.main ul li{
+	margin: 0 auto;
+	height: 200px;
+	width: 600px;
+	padding: 10px 0;
+	border-bottom: 1px dashed silver ;
+
+}
+.main ul li p:nth-of-type(1){
+	font-size: 20px;
+	font-weight: bold;
+	color: rgb(119, 118, 117);
+}
+.main ul li:nth-child(2n+1) img{
+	float: right;
+	width: 200px;
+}
+.main ul li:nth-child(2n) img{
+	float: left;
+	width: 200px;
+}
+.main ul li:nth-child(2n+1) p{
+	float: left;
+	width: 320px;
+	line-height: 40px;
+}
+.main ul li:nth-child(2n) p{
+	float: right;
+	width: 300px;
+	line-height: 40px;
+}
+
+
+
+
+
+/* foot */
+.foot{
+	margin-top: 10px;
+	height: 100px;
+	padding: 10px;
+	background-color: #2F2F2F;
+}
+.foot .f_border {
+	height: 100px;
+	border: 1px solid #FFD283;
+	position: relative;
+}
+.foot .f_border b {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-color: red;
+	background: url(../images/circle.png);
+}
+.foot .f_border .b1 {
+	top: -1px;
+	left: -1px;
+	background-position: right bottom;
+}
+.foot .f_border .b2 {
+	top: -1px;
+	right: -1px;
+	background-position: left bottom;
+}
+.foot .f_border .b3 {
+	bottom: -1px;
+	right: -1px;
+	background-position: left top;
+}
+.foot .f_border .b4 {
+	bottom: -1px;
+	left: -1px;
+	background-position: right top;
+}
+.foot .f_border ul {
+	width: 900px;
+	margin: 0 auto;
+}
+.foot .f_border ul li:nth-child(2n){
+	float: left;
+	line-height: 100px;
+	width: 1px;
+	text-align: center;
+	color: white;
+}
+.foot .f_border ul li:nth-child(2n+1){
+	float: left;
+	line-height: 100px;
+	width: 149px;
+	text-align: center;
+}
+.foot .f_border ul li a{
+    color: white;
+    font-size: 14px;
+}
