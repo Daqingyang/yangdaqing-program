@@ -101,6 +101,8 @@ li{
 	width: $width;
 	height: 40px;
 	margin: 0 auto;
+	
+
 }
 
 .nav ul li{
@@ -108,196 +110,25 @@ li{
 	color: white;
 	line-height: 36px;
 	font-size: 14px;
-	padding:0 45px;
-	margin-top: 4px;
+	margin:0 30px;
 	text-align: center;
 	cursor: pointer;
-	position: relative;
-	margin-right: 7px;
 }
 .nav ul li a{
     color: white;
 }
 .nav ul li:nth-of-type(1){
-	margin-left: 6px;
-	background-color: white;
-}
-.nav ul li:nth-of-type(1) a{
-	color:#c61a1a ;
+	border-bottom: 4px solid white;
 }
 .nav ul li:hover{
-	background-color: white;
+	border-bottom: 4px solid white;
 }
-.nav ul li:hover a{
-	color:#c61a1a ;
-}
-.nav .nav-2{
-	margin: 0 auto;
-	position: absolute;
-	left: -131px;
-	top: 36px;
-	width: $width;
-	height: 100px;
-	background:rgba(252, 251, 251, 0.986);
-	z-index: 100;
-	display: none;
-	color:#c61a1a ;
-	border-top: none;
-	cursor: default;
-}
-.nav .nav-2 span{
-	display: inline-block;
-	width: 100px;
-	line-height: 50px;
-	margin-top: 25px;
-	border-radius: 20px;
-	cursor: pointer;
-	color: black;
-	
-}
-.nav .nav-2 span:hover{
-	color: white;
-	font-size: 18px;
-	background-color: #c61a1a;
-	margin-top: 20px;
-}
-.nav .nav-3{
-	margin: 0 auto;
-	position: absolute;
-	left: -284px;
-	top: 36px;
-	width: $width;
-	height: 281px;
-	background:rgba(252, 251, 251, 0.986);
-	z-index: 100;
-	display: none;
-	color:black;
-	cursor: default;
-}
-.nav .nav-3 p{
-	line-height: 46px;
-	cursor: pointer;
-	text-align: left;
-	padding-left: 40px;
-	border: 1px solid black;
-	border-top:none;
-	width: 100px;
-}
-
-.nav .tczq .nav-3 footer{
-	display: none;
-	float: left;
-}
-
-.nav .tczq .nav-3 footer a:hover{
-	color: white;
-	background-color: #c61a1a;
-}
-.nav .tczq .nav-3 footer a{
-	float: left;
-	width: 140px;
-	color: black;
-	line-height: 46px;
-	border: 1px solid black;
-	border-top: none;
-	border-left: none;
-}
-.nav .nav-3 .nav-3-1{
-	width: 143px;
-	height: 281px;
-	float: left;
-}
-.nav .nav-3 p:hover{
-	color: white;
-	background-color: #c61a1a;
-}
-.nav .nav-3 p span{
-	display: none;
-}
-.nav .nav-3 p:hover span{
-	display: inline-block;
-}
-
-/* 轮播图 */
-body,ul,li{
-	padding: 0;
-	margin: 0;
-}
-li{
-	list-style: none;
-}
-.sliderBox{
-	position: relative;
-	width: $width;
-	height: 300px;
-	overflow: hidden;
-	margin: 0 auto;
-	z-index: 10;
-
-}
-.sliderList{
-	position: absolute;
-}
-.sliderList li{
-	float: left;
-	width: $width;
-	height: 300px;
-}
-.sliderList img{
-	width: $width;
-	height:300px;
-	z-index: 10;
-}
-.btns span{
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	font-size: 50px;
-	text-align: center;
-	line-height: 50px;
-	top: 50%;
-	margin-top: -25px;
-	cursor: pointer;
-	background-color: black;
-	opacity: .3;
-	font-weight: bold;
-	color: white;
-}
-.btns span:first-child{
-	left:20px;
-}
-.btns span:last-child{
-	right:20px;
-}
-.numList{
-	position: absolute;
-	bottom: 10px;
-	right:10px;
-}
-.numList li{
-	float: left;
-	width: 20px;
-	height: 20px;
-	border-radius: 100%;
-	font-size: 12px;
-	text-align: center;
-	line-height: 20px;
-	margin: 0 10px;
-	cursor: pointer;
-	background-color: white;
-	color: red;
-}
-.numList li:hover,.numList li.hover{
-	background-color: red;
-	color:white;
-}
-
 
 /* ---- banner ---- */
-// .sliderBox img{
-// 	width: $width;
-// 	height: 350px;
-// }
+.sliderBox img{
+	width: $width;
+	height: 350px;
+}
 
 /* main */
 /* main-main1 */
@@ -413,9 +244,9 @@ main .main3 ul li a{
 	color: black;
 	font-size: 12px;
 	display: inline;
-
+	width: 180px;
 	text-align: right;
-
+	margin-bottom: 0px;
 	margin-left: 0px;
 }
 main .main3 ul li h5 a{
@@ -534,3 +365,74 @@ main .main4 div:nth-of-type(2){
 }
 
 
+/* 轮播图 */
+body,ul,li{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+.sliderBox{
+	position: relative;
+	width: $width;
+	height: 300px;
+	overflow: hidden;
+	margin: 0 auto;
+
+}
+.sliderList{
+	position: absolute;
+}
+.sliderList li{
+	float: left;
+	width: $width;
+	height: 300px;
+}
+.sliderList img{
+	width: $width;
+	height:300px;
+}
+.btns span{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	font-size: 50px;
+	text-align: center;
+	line-height: 50px;
+	top: 50%;
+	margin-top: -25px;
+	cursor: pointer;
+	background-color: black;
+	opacity: .3;
+	font-weight: bold;
+	color: white;
+}
+.btns span:first-child{
+	left:20px;
+}
+.btns span:last-child{
+	right:20px;
+}
+.numList{
+	position: absolute;
+	bottom: 10px;
+	right:10px;
+}
+.numList li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	margin: 0 10px;
+	cursor: pointer;
+	background-color: white;
+	color: red;
+}
+.numList li:hover,.numList li.hover{
+	background-color: red;
+	color:white;
+}
