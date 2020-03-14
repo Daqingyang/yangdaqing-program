@@ -39,18 +39,81 @@
     </div>
 
     <!-- nav -->
-    <nav>
-        <ul>
-            <li><a href="index.html">首页</a< /li>
-            <li><a href="#">传统菜系</a></li>
-            <li><a href="#">特产专区</a></li>
-            <li><a href="#">美食文化</a></li>
-            <li><a href="#">美食达人</a></li>
-            <li><a href="#">讨论专区</a></li>
-            <li><a href="#">关于我们</a></li>
-            <li><a href="#">个人中心</a></li>
-        </ul>
-    </nav>
+    <div class="nav">
+		<ul>
+			<li><a href="index.html">首页</a></li>
+			<li class="ctcx">
+				<a href="#">传统菜系</a>
+				<div class="nav-2">
+					<span>川菜</span>
+					<span>鲁菜</span>
+					<span>粤菜</span>
+					<span>苏菜</span>
+					<span>浙菜</span>
+					<span>闽菜</span>
+					<span>湘菜</span>
+					<span>徽菜</span>
+				</div>
+			</li>
+			<li class="tczq">
+				<a href="tczq.html">特产专区</a>
+				<div class="nav-3">
+					<div class="nav-3-1">
+						<p class="nav-3-2">华北特产 &nbsp;&nbsp;&nbsp;&nbsp;<span>></span></p>
+						<p class="nav-3-2">东北特产 &nbsp;&nbsp;&nbsp;&nbsp;<span>></span></p>
+						<p class="nav-3-2">华东特产 &nbsp;&nbsp;&nbsp;&nbsp;<span>></span></p>
+						<p class="nav-3-2">华中特产 &nbsp;&nbsp;&nbsp;&nbsp;<span>></span></p>
+						<p class="nav-3-2">华南特产 &nbsp;&nbsp;&nbsp;&nbsp;<span>></span></p>
+						<p class="nav-3-2">西南特产 &nbsp;&nbsp;&nbsp;&nbsp;<span>></span></p>
+					</div>
+					<footer>
+						<a href="#">北京特产</a><br>
+						<a href="#">天津特产</a><br>
+						<a href="#">河北特产</a><br>
+						<a href="#">山西特产</a><br>
+						<a href="#">内蒙古特产</a>
+					</footer>
+
+					<footer>
+						<a href="#">黑龙江特产</a><br>
+						<a href="#">吉林特产</a><br>
+						<a href="#">辽宁特产</a>
+					</footer>
+					<footer>
+						<a href="#">上海特产</a><br>
+						<a href="#">江苏特产</a><br>
+						<a href="#">浙江特产</a><br>
+						<a href="#">安徽特产</a><br>
+						<a href="#">江西特产</a><br>
+						<a href="#">山东特产</a>
+					</footer>
+					<footer>
+						<a href="#">河南特产</a><br>
+						<a href="#">湖北特产</a><br>
+						<a href="#">湖南特产</a>
+					</footer>
+					<footer>
+						<a href="#">广东特产</a><br>
+						<a href="#">广西特产</a><br>
+						<a href="#">海南特产</a><br>
+						<a href="#">香港特产</a><br>
+						<a href="#">澳门特产</a>
+					</footer>
+					<footer>
+						<a href="#">四川特产</a><br>
+						<a href="#">贵州特产</a><br>
+						<a href="#">云南特产</a><br>
+						<a href="#">重庆特产</a><br>
+						<a href="#">西藏特产</a>
+					</footer>
+				</div>
+			</li>
+			<li><a href="#">美食文化</a></li>
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">个人中心</a></li>
+		</ul>
+	</div>
+
 
     <!--main  -->
     <main>
@@ -122,6 +185,36 @@
             });
         });
     </script>
+    <script>
+		$(".ctcx").mouseover(function () {
+			$(".ctcx .nav-2")
+				.show()
+		});
+		$(".ctcx").mouseleave(function () {
+			$(".ctcx .nav-2").hide();
+		})
+		$(".tczq").mouseover(function () {
+			$(".tczq .nav-3")
+				.show()
+		});
+		$(".tczq").mouseleave(function () {
+			$(".tczq .nav-3").hide();
+		})
+		
+		$(".nav-3-2").mouseover(function(){
+			var index = $(this).index();
+			$("footer")
+				.eq(index)
+				.show()
+				.siblings("footer")
+				.hide();
+				
+		})
+		$(".nav-3").mouseleave(function () {
+			$("footer").hide();
+		})
+
+	</script>
 </body>
 
 </html>
